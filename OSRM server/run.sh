@@ -1,0 +1,1 @@
+docker run -t -i -p 5000:5000 -v "$(pwd):/data" osrm/osrm-backend osrm-routed --algorithm mld /data/city.osrm --max-table-size 10000
