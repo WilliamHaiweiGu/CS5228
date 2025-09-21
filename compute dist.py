@@ -23,7 +23,7 @@ if __name__ == "__main__":
     n_homes: int = len(src_coords)
     src_idxs_str: str = ";".join(map(str, range(n_homes)))
     for dest_file in os.listdir(os.path.join("data", "auxiliary-data")):
-        if dest_file in [src_file, out_file]:
+        if not (dest_file.startswith("sg-") and dest_file.endswith(".csv")) or dest_file == src_file:
             continue
         print("Processing", dest_file, "...")
         t: float = time.time()
