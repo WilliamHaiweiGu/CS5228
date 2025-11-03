@@ -301,3 +301,4 @@ OSRM server/*
 main.py
 solution.py
 test.py
+*.npy
