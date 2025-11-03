@@ -296,7 +296,7 @@ data/
 
 OSRM server/*
 !OSRM server/build.sh
-!OSRM server/run.sh
+!OSRM server/install.sh
 
 main.py
 solution.py
